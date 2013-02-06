@@ -1,0 +1,165 @@
+/* line 17, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 58, logo/*.png */
+.logo-sprite, .logo-maf-color, .sites a:hover .site-logo, .logo-maf, .site-logo, .logo-retina-sf97945c10b {
+  background: url('../images/logo-sc9e02a24ac.png') no-repeat;
+}
+
+/* line 60, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.logo-maf-color, .sites a:hover .site-logo {
+  background-position: 0 -80px;
+}
+
+/* line 60, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.logo-maf, .site-logo {
+  background-position: 0 0;
+}
+
+/* line 60, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.logo-retina-sf97945c10b {
+  background-position: 0 -160px;
+}
+
+/* line 42, logo/retina/*.png */
+.retina-sprite, .retina-maf {
+  background: url('../images/logo/retina-sf97945c10b.png') no-repeat;
+}
+
+/* line 60, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.retina-maf {
+  background-position: 0 0;
+}
+
+/* line 11, ../sass/main.scss */
+.sites li {
+  float: left;
+  list-style: none;
+  width: 200px;
+}
+/* line 17, ../sass/main.scss */
+.sites a {
+  margin: 0 auto;
+  display: block;
+  position: relative;
+}
+/* line 23, ../sass/main.scss */
+.sites a:hover .site-background {
+  margin-top: -30px;
+  margin-left: -75px;
+  height: 150px;
+  width: 150px;
+}
+/* line 30, ../sass/main.scss */
+.sites a:hover .site-logo {
+  background-position: 10px -70px;
+  background-color: rgba(0, 0, 0, 0.75);
+  margin-bottom: 50px;
+}
+/* line 40, ../sass/main.scss */
+.sites p {
+  text-align: center;
+}
+
+/* line 46, ../sass/main.scss */
+.site-background {
+  background-image: url("../images/backgrounds/maf.png");
+  background-position: center center;
+  background-attachment: fixed;
+  border-radius: 100px;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+  display: block;
+  position: absolute;
+  top: 5px;
+  left: 50%;
+  margin-left: -45px;
+  height: 90px;
+  width: 90px;
+  z-index: 1;
+}
+
+/* line 64, ../sass/main.scss */
+.site-logo {
+  background-position: 10px 10px;
+  background-color: #dddde0;
+  border-radius: 100px;
+  -webkit-transition: none 0.4s;
+  -moz-transition: none 0.4s;
+  -o-transition: none 0.4s;
+  transition: none 0.4s;
+  -webkit-transition-property: background-color, margin-bottom;
+  -moz-transition-property: background-color, margin-bottom;
+  -o-transition-property: background-color, margin-bottom;
+  transition-property: background-color, margin-bottom;
+  margin: 0 auto 25px;
+  position: relative;
+  text-indent: -9999px;
+  height: 100px;
+  width: 100px;
+  z-index: 10;
+}

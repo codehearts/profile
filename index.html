@@ -3,14 +3,17 @@
 	<head>
 		<meta charset="utf-8" />
 		<title>Nate Hart &mdash; CSUG</title>
-		<link href="main.css" rel="stylesheet" />
+		<link href="css/main.css" rel="stylesheet" />
 	</head>
 	<body>
 		<ul class="sites">
 			<li>
 				<a href="http://www.moodandfigure.com">
+					<!-- Yes yes, presentational markup is bad.
+					I have to do this because WebKit doesn't animate pseudo-elements (yet).
+					Where is your Chrome God now? -->
 					<div class="site-background"></div>
-					<div class="site-logo"></div>
+					<h2 class="site-logo">Mood &amp Figure</h2>
 					<p>Lorem ipsum dolor sit amet</p>
 				</a>
 			</li>

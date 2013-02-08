@@ -64,17 +64,17 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 /* line 58, logo/*.png */
-.logo-sprite, .logo-maf-color, .sites a:hover > .site-logo, .logo-maf, .site-logo, .logo-retina-sf97945c10b {
+.logo-sprite, .logo-maf-color, .sites a:hover.site-maf > .site-logo, .logo-maf, .site-maf > .site-logo, .logo-retina-sf97945c10b {
   background: url('../images/logo-sc9e02a24ac.png') no-repeat;
 }
 
 /* line 60, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
-.logo-maf-color, .sites a:hover > .site-logo {
+.logo-maf-color, .sites a:hover.site-maf > .site-logo {
   background-position: 0 -80px;
 }
 
 /* line 60, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
-.logo-maf, .site-logo {
+.logo-maf, .site-maf > .site-logo {
   background-position: 0 0;
 }
 
@@ -114,18 +114,20 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 /* line 35, ../sass/main.scss */
 .sites a:hover > .site-logo {
-  background-position: 10px -70px;
-  background-color: rgba(0, 0, 0, 0.75);
   margin-bottom: 50px;
 }
-/* line 45, ../sass/main.scss */
+/* line 39, ../sass/main.scss */
+.sites a:hover.site-maf > .site-logo {
+  background-position: 10px -70px;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+/* line 48, ../sass/main.scss */
 .sites p {
   text-align: center;
 }
 
-/* line 51, ../sass/main.scss */
+/* line 54, ../sass/main.scss */
 .site-background {
-  background-image: url("../images/backgrounds/maf.jpg");
   background-position: center center;
   background-attachment: fixed;
   border-radius: 150px;
@@ -142,10 +144,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   width: 90px;
   z-index: 1;
 }
+/* line 70, ../sass/main.scss */
+.site-maf > .site-background {
+  background-image: url("../images/backgrounds/maf.jpg");
+}
 
-/* line 69, ../sass/main.scss */
+/* line 75, ../sass/main.scss */
 .site-logo {
-  background-position: 10px 10px;
   background-color: #dddde0;
   border-radius: 100px;
   -webkit-transition: none 0.4s;
@@ -162,4 +167,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   height: 100px;
   width: 100px;
   z-index: 10;
+}
+/* line 88, ../sass/main.scss */
+.site-maf > .site-logo {
+  background-position: 10px 10px;
 }

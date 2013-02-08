@@ -63,100 +63,76 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 58, logo/*.png */
-.logo-sprite, .logo-maf-color, .sites a:hover.site-maf > .site-logo, .logo-maf, .site-maf > .site-logo, .logo-retina-sf97945c10b {
-  background: url('../images/logo-sc9e02a24ac.png') no-repeat;
+/* line 50, logo/*.png */
+.logo-sprite {
+  background: url('../images/logo-s7ab2d552d8.png') no-repeat;
 }
 
-/* line 60, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
-.logo-maf-color, .sites a:hover.site-maf > .site-logo {
-  background-position: 0 -80px;
+/* line 50, logo-retina/*.png */
+.logo-retina-sprite {
+  background: url('../images/logo-retina-scbf058b018.png') no-repeat;
 }
 
-/* line 60, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
-.logo-maf, .site-maf > .site-logo {
-  background-position: 0 0;
-}
-
-/* line 60, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
-.logo-retina-sf97945c10b {
-  background-position: 0 -160px;
-}
-
-/* line 42, logo/retina/*.png */
-.retina-sprite, .retina-maf {
-  background: url('../images/logo/retina-sf97945c10b.png') no-repeat;
-}
-
-/* line 60, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
-.retina-maf {
-  background-position: 0 0;
-}
-
-/* line 16, ../sass/main.scss */
+/* line 22, ../sass/main.scss */
 .sites > li {
   float: left;
-  list-style: none;
   width: 200px;
 }
-/* line 22, ../sass/main.scss */
+/* line 27, ../sass/main.scss */
 .sites a {
-  margin: 0 auto;
   display: block;
   position: relative;
+  text-decoration: none;
 }
-/* line 28, ../sass/main.scss */
+/* line 33, ../sass/main.scss */
 .sites a:hover > .site-background {
-  top: -25px;
   margin-left: -75px;
+  top: -25px;
   height: 150px;
   width: 150px;
 }
-/* line 35, ../sass/main.scss */
+/* line 40, ../sass/main.scss */
 .sites a:hover > .site-logo {
   margin-bottom: 50px;
 }
-/* line 39, ../sass/main.scss */
-.sites a:hover.site-maf > .site-logo {
-  background-position: 10px -70px;
-  background-color: rgba(0, 0, 0, 0.75);
-}
-/* line 48, ../sass/main.scss */
-.sites p {
-  text-align: center;
+/* line 44, ../sass/main.scss */
+.sites a:hover > .site-background, .sites a:hover > .site-logo {
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-timing-function: ease-out;
+  -moz-transition-timing-function: ease-out;
+  -o-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
 }
 
-/* line 54, ../sass/main.scss */
+/* line 52, ../sass/main.scss */
 .site-background {
-  background-position: center center;
+  background-position: center;
   background-attachment: fixed;
   border-radius: 150px;
-  -webkit-transition: all 0.4s;
-  -moz-transition: all 0.4s;
-  -o-transition: all 0.4s;
-  transition: all 0.4s;
-  display: block;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  margin-left: -45px;
   position: absolute;
   top: 5px;
   left: 50%;
-  margin-left: -45px;
   height: 90px;
   width: 90px;
   z-index: 1;
 }
-/* line 70, ../sass/main.scss */
-.site-maf > .site-background {
-  background-image: url("../images/backgrounds/maf.jpg");
-}
 
-/* line 75, ../sass/main.scss */
+/* line 66, ../sass/main.scss */
 .site-logo {
-  background-color: #dddde0;
+  background: #dddde0 no-repeat;
   border-radius: 100px;
-  -webkit-transition: none 0.4s;
-  -moz-transition: none 0.4s;
-  -o-transition: none 0.4s;
-  transition: none 0.4s;
+  -webkit-transition: none 0.3s ease-out;
+  -moz-transition: none 0.3s ease-out;
+  -o-transition: none 0.3s ease-out;
+  transition: none 0.3s ease-out;
   -webkit-transition-property: background-color, margin-bottom;
   -moz-transition-property: background-color, margin-bottom;
   -o-transition-property: background-color, margin-bottom;
@@ -168,7 +144,40 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   width: 100px;
   z-index: 10;
 }
-/* line 88, ../sass/main.scss */
+
+/* line 79, ../sass/main.scss */
+.site-caption {
+  text-align: center;
+  text-transform: lowercase;
+  font-style: italic;
+  color: #999;
+}
+
+/* line 91, ../sass/main.scss */
 .site-maf > .site-logo {
+  background-image: url('../images/logo-s7ab2d552d8.png');
   background-position: 10px 10px;
+}
+@media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
+  /* line 91, ../sass/main.scss */
+  .site-maf > .site-logo {
+    background-image: url('../images/logo-retina-scbf058b018.png');
+    background-size: 80px 160px;
+  }
+}
+/* line 95, ../sass/main.scss */
+.site-maf:hover > .site-logo {
+  background-color: rgba(0, 0, 0, 0.75);
+  background-position: 10px -70px;
+}
+/* line 100, ../sass/main.scss */
+.site-maf > .site-background {
+  background-image: url('../images/backgrounds/maf.jpg?1343344619');
+}
+@media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
+  /* line 100, ../sass/main.scss */
+  .site-maf > .site-background {
+    background-image: url('../images/backgrounds/maf@2x.jpg?1343344912');
+    background-size: 525px 700px;
+  }
 }

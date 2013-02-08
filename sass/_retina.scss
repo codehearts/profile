@@ -1,0 +1,30 @@
+@mixin image2x($image, $image2x: "", $type: "png") {
+	background-image: image-url($image);
+
+	// If a retina image was not specified, make one from the original image filename
+	@if ($image2x == "") {
+		$image2x: $image + "@2x." + $type;
+		$image: $image + "." + $type;
+	}
+
+	@media all and (-webkit-min-device-pixel-ratio: 1.5),
+	all and (-o-min-device-pixel-ratio: 3/2),
+	all and (min--moz-device-pixel-ratio: 1.5),
+	all and (min-device-pixel-ratio: 1.5) {
+		background-image: image-url($image2x);
+		background-size: image-width($image) image-height($image);
+	}
+}
+
+@mixin sprite2x($sprites, $sprites2x, $name, $offset-x: 0, $offset-y: 0) {
+	background-image: sprite-url($sprites);
+	background-position: sprite-position($sprites2x, $name, $offset-x, $offset-y);
+
+	@media all and (-webkit-min-device-pixel-ratio: 1.5),
+	all and (-o-min-device-pixel-ratio: 3/2),
+	all and (min--moz-device-pixel-ratio: 1.5),
+	all and (min-device-pixel-ratio: 1.5) {
+		background-image: sprite-url($sprites2x);
+		background-size: image-width(sprite-path($sprites)) image-height(sprite-path($sprites));
+	}
+}

@@ -7,8 +7,13 @@
 @import "logo/retina/*.png";
 @include all-retina-sprites;
 
+$site-button-size:				100px;
+$site-button-background-size:	150px;
+$site-button-size-difference:	$site-button-background-size - $site-button-size;
+$site-button-caption-leading:	25px;
+
 .sites {
-	li {
+	& > li {
 		float: left;
 		list-style: none;
 		width: 200px;
@@ -20,19 +25,19 @@
 		position: relative;
 
 		&:hover {
-			.site-background {
-				margin-top: -30px;
-				margin-left: -75px;
-				height: 150px;
-				width: 150px;
+			& > .site-background {
+				top: -($site-button-size-difference / 2);
+				margin-left: -($site-button-background-size / 2);
+				height: $site-button-background-size;
+				width: $site-button-background-size;
 			}
 			
-			.site-logo {
+			& > .site-logo {
 				@extend .logo-maf-color;
 				// TODO Set a variable that can calculate the offset
 				@include sprite-background-position($logo-sprites, maf-color, 10px, 10px);
 				background-color: rgba(0,0,0,0.75);
-				margin-bottom: 50px;
+				margin-bottom: $site-button-caption-leading + ($site-button-size-difference / 2);
 			}
 		}
 	}
@@ -47,17 +52,17 @@
 	background-image: url('../images/backgrounds/maf.jpg');
 	background-position: center center;
 	background-attachment: fixed;
-	border-radius: 100px;
+	border-radius: $site-button-background-size;
 	// TODO Tweak easing
 	@include transition(all 0.4s);
 	
 	display: block;
 	position: absolute;
-	top: 5px;
+	top: 5px; // We shrank the size by 10, so we have to move it down by 10/2
 	left: 50%;
-	margin-left: -45px;
-	height: 90px;
-	width: 90px;
+	margin-left: (-($site-button-size - 10) / 2);
+	height: $site-button-size - 10;
+	width: $site-button-size - 10;
 	z-index: 1;
 }
 
@@ -66,14 +71,14 @@
 	// TODO Set a variable that can calculate the offset
 	@include sprite-background-position($logo-sprites, maf, 10px, 10px);
 	background-color: #dddde0;
-	border-radius: 100px;
+	border-radius: $site-button-size;
 	// TODO Tweak easing, make consistent with .site-background
 	@include transition(none 0.4s);
 	@include transition-property(background-color, margin-bottom);
-	margin: 0 auto 25px;
+	margin: 0 auto $site-button-caption-leading;
 	position: relative;
 	text-indent: -9999px;
-	height: 100px;
-	width: 100px;
+	height: $site-button-size;
+	width: $site-button-size;
 	z-index: 10;
 }

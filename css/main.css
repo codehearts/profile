@@ -64,12 +64,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 /* line 58, logo/*.png */
-.logo-sprite, .logo-maf-color, .sites a:hover .site-logo, .logo-maf, .site-logo, .logo-retina-sf97945c10b {
+.logo-sprite, .logo-maf-color, .sites a:hover > .site-logo, .logo-maf, .site-logo, .logo-retina-sf97945c10b {
   background: url('../images/logo-sc9e02a24ac.png') no-repeat;
 }
 
 /* line 60, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
-.logo-maf-color, .sites a:hover .site-logo {
+.logo-maf-color, .sites a:hover > .site-logo {
   background-position: 0 -80px;
 }
 
@@ -93,42 +93,42 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   background-position: 0 0;
 }
 
-/* line 11, ../sass/main.scss */
-.sites li {
+/* line 16, ../sass/main.scss */
+.sites > li {
   float: left;
   list-style: none;
   width: 200px;
 }
-/* line 17, ../sass/main.scss */
+/* line 22, ../sass/main.scss */
 .sites a {
   margin: 0 auto;
   display: block;
   position: relative;
 }
-/* line 23, ../sass/main.scss */
-.sites a:hover .site-background {
-  margin-top: -30px;
+/* line 28, ../sass/main.scss */
+.sites a:hover > .site-background {
+  top: -25px;
   margin-left: -75px;
   height: 150px;
   width: 150px;
 }
-/* line 30, ../sass/main.scss */
-.sites a:hover .site-logo {
+/* line 35, ../sass/main.scss */
+.sites a:hover > .site-logo {
   background-position: 10px -70px;
   background-color: rgba(0, 0, 0, 0.75);
   margin-bottom: 50px;
 }
-/* line 40, ../sass/main.scss */
+/* line 45, ../sass/main.scss */
 .sites p {
   text-align: center;
 }
 
-/* line 46, ../sass/main.scss */
+/* line 51, ../sass/main.scss */
 .site-background {
-  background-image: url("../images/backgrounds/maf.png");
+  background-image: url("../images/backgrounds/maf.jpg");
   background-position: center center;
   background-attachment: fixed;
-  border-radius: 100px;
+  border-radius: 150px;
   -webkit-transition: all 0.4s;
   -moz-transition: all 0.4s;
   -o-transition: all 0.4s;
@@ -143,7 +143,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   z-index: 1;
 }
 
-/* line 64, ../sass/main.scss */
+/* line 69, ../sass/main.scss */
 .site-logo {
   background-position: 10px 10px;
   background-color: #dddde0;

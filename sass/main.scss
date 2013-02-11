@@ -1,6 +1,14 @@
 @import "compass/reset";
 @import "compass/css3/transition";
 
+// Typography
+$base-font-size:	18px;
+$base-line-height:	24px;
+$sans-serif: "Helvetica Neue", Arial, Helvetica, sans-serif;
+$heading-color:	#33668f;
+$body-color:	#999;
+@import "compass/typography/vertical_rhythm";
+
 @import "_retina";
 
 // Sprites
@@ -17,87 +25,15 @@ $site-button-timing-off:	0.3s;
 $site-button-ease-on:		ease-out;
 $site-button-ease-off:		ease-out;
 
-.sites {
-	// TODO Establish a grid for this
-	& > li {
-		float: left;
-		width: 200px;
-	}
-
-	a {
-		display: block;
-		position: relative;
-		text-decoration: none;
-
-		&:hover {
-			& > .site-background {
-				margin-left: -($site-button-background-size / 2);
-				top: -($site-button-size-difference / 2);
-				height: $site-button-background-size;
-				width: $site-button-background-size;
-			}
-			
-			& > .site-logo {
-				margin-bottom: $site-button-caption-leading + ($site-button-size-difference / 2);
-			}
-			
-			& > .site-background, & > .site-logo {
-				@include transition-duration($site-button-timing-on);
-				@include transition-timing-function($site-button-ease-on);
-			}
-		}
-	}
+.primary-heading {
+	@include adjust-font-size-to(36px);
+	font-family: $sans-serif;
+	font-weight: bold;
+	color: $heading-color;
 }
 
-.site-background {
-	background-position: center;
-	background-attachment: fixed;
-	border-radius: $site-button-background-size;
-	@include transition(all $site-button-timing-off $site-button-ease-off);
-	margin-left: (-($site-button-size - 10) / 2);
-	position: absolute;
-	top: 5px; // We shrank the size by 10, so we have to move it down by 10/2
-	left: 50%;
-	height: $site-button-size - 10;
-	width: $site-button-size - 10;
-	z-index: 1;
+.primary-subheading {
+	color: $body-color;
 }
 
-.site-logo {
-	background: #dddde0 no-repeat;
-	border-radius: $site-button-size;
-	@include transition(none $site-button-timing-off $site-button-ease-off);
-	@include transition-property(background-color, margin-bottom);
-	margin: 0 auto $site-button-caption-leading;
-	position: relative;
-	text-indent: -9999px;
-	height: $site-button-size;
-	width: $site-button-size;
-	z-index: 10;
-}
-
-.site-caption {
-	text-align: center;
-	text-transform: lowercase;
-	font-style: italic;
-	color: #999;
-}
-
-.site-maf {
-	$sprite-file: sprite-file($logo-sprites, maf);
-	$offset-x: ($site-button-size - image-width($sprite-file)) / 2;
-	$offset-y: ($site-button-size - image-height($sprite-file)) / 2;
-
-	& > .site-logo {
-		@include sprite2x($logo-sprites, $logo-retina-sprites, maf, $offset-x, $offset-y);
-	}
-
-	&:hover > .site-logo {
-		background-color: rgba(0,0,0,0.75);
-		background-position: sprite-position($logo-sprites, maf-color, $offset-x, $offset-y);
-	}
-
-	& > .site-background {
-		@include image2x('backgrounds/maf.jpg', 'backgrounds/maf@2x.jpg');
-	}
-}
+@import "sites";

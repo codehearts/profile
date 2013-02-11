@@ -73,29 +73,43 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   background: url('../images/logo-retina-scbf058b018.png') no-repeat;
 }
 
-/* line 22, ../sass/main.scss */
+/* line 28, ../sass/main.scss */
+.primary-heading {
+  font-size: 2em;
+  line-height: 1.33333em;
+  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: #33668f;
+}
+
+/* line 35, ../sass/main.scss */
+.primary-subheading {
+  color: #999999;
+}
+
+/* line 3, ../sass/sites.scss */
 .sites > li {
   float: left;
   width: 200px;
 }
-/* line 27, ../sass/main.scss */
+/* line 8, ../sass/sites.scss */
 .sites a {
   display: block;
   position: relative;
   text-decoration: none;
 }
-/* line 33, ../sass/main.scss */
+/* line 14, ../sass/sites.scss */
 .sites a:hover > .site-background {
   margin-left: -75px;
   top: -25px;
   height: 150px;
   width: 150px;
 }
-/* line 40, ../sass/main.scss */
+/* line 21, ../sass/sites.scss */
 .sites a:hover > .site-logo {
   margin-bottom: 50px;
 }
-/* line 44, ../sass/main.scss */
+/* line 25, ../sass/sites.scss */
 .sites a:hover > .site-background, .sites a:hover > .site-logo {
   -webkit-transition-duration: 0.2s;
   -moz-transition-duration: 0.2s;
@@ -107,7 +121,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transition-timing-function: ease-out;
 }
 
-/* line 52, ../sass/main.scss */
+/* line 33, ../sass/sites.scss */
 .site-background {
   background-position: center;
   background-attachment: fixed;
@@ -125,7 +139,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   z-index: 1;
 }
 
-/* line 66, ../sass/main.scss */
+/* line 47, ../sass/sites.scss */
 .site-logo {
   background: #dddde0 no-repeat;
   border-radius: 100px;
@@ -145,7 +159,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   z-index: 10;
 }
 
-/* line 79, ../sass/main.scss */
+/* line 60, ../sass/sites.scss */
 .site-caption {
   text-align: center;
   text-transform: lowercase;
@@ -153,29 +167,29 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   color: #999;
 }
 
-/* line 91, ../sass/main.scss */
+/* line 72, ../sass/sites.scss */
 .site-maf > .site-logo {
   background-image: url('../images/logo-s7ab2d552d8.png');
   background-position: 10px 10px;
 }
 @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
-  /* line 91, ../sass/main.scss */
+  /* line 72, ../sass/sites.scss */
   .site-maf > .site-logo {
     background-image: url('../images/logo-retina-scbf058b018.png');
     background-size: 80px 160px;
   }
 }
-/* line 95, ../sass/main.scss */
+/* line 76, ../sass/sites.scss */
 .site-maf:hover > .site-logo {
   background-color: rgba(0, 0, 0, 0.75);
   background-position: 10px -70px;
 }
-/* line 100, ../sass/main.scss */
+/* line 81, ../sass/sites.scss */
 .site-maf > .site-background {
   background-image: url('../images/backgrounds/maf.jpg?1343344619');
 }
 @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
-  /* line 100, ../sass/main.scss */
+  /* line 81, ../sass/sites.scss */
   .site-maf > .site-background {
     background-image: url('../images/backgrounds/maf@2x.jpg?1343344912');
     background-size: 525px 700px;

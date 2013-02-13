@@ -1,10 +1,14 @@
-.sites {
-	// TODO Establish a grid for this
-	& > li {
-		float: left;
-		width: 200px;
-	}
+// Site button parameters
+$site-button-size:				100px;
+$site-button-background-size:	150px;
+$site-button-size-difference:	$site-button-background-size - $site-button-size;
+$site-button-caption-leading:	25px;
+$site-button-timing-on:		0.2s;
+$site-button-timing-off:	0.3s;
+$site-button-ease-on:		ease-out;
+$site-button-ease-off:		ease-out;
 
+.sites {
 	a {
 		display: block;
 		position: relative;
@@ -27,6 +31,14 @@
 				@include transition-timing-function($site-button-ease-on);
 			}
 		}
+	}
+}
+
+.site {
+	@include column(2);
+
+	&:last-child {
+		@include last;
 	}
 }
 

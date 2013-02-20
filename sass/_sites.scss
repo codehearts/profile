@@ -1,6 +1,8 @@
+@import "compass/typography/text/replacement";
+
 // Site button parameters
-$site-button-size:				100px;
-$site-button-background-size:	150px;
+$site-button-size:				96px;
+$site-button-background-size:	144px;
 $site-button-size-difference:	$site-button-background-size - $site-button-size;
 $site-button-caption-leading:	25px;
 $site-button-timing-on:		0.2s;
@@ -57,13 +59,14 @@ $site-button-ease-off:		ease-out;
 }
 
 .site-logo {
+	// TODO Color variable for this
 	background: #dddde0 no-repeat;
 	border-radius: $site-button-size;
 	@include transition(none $site-button-timing-off $site-button-ease-off);
 	@include transition-property(background-color, margin-bottom);
 	margin: 0 auto $site-button-caption-leading;
 	position: relative;
-	text-indent: -9999px;
+	@include hide-text();
 	height: $site-button-size;
 	width: $site-button-size;
 	z-index: 10;
@@ -73,7 +76,7 @@ $site-button-ease-off:		ease-out;
 	text-align: center;
 	text-transform: lowercase;
 	font-style: italic;
-	color: #999;
+	color: $body-color;
 }
 
 .site-maf {

@@ -1,14 +1,15 @@
 @import "compass/reset";
 @import "compass/css3/transition";
 
-@import "_retina";
+@import "retina";
+
+body {
+	background: #fffff9;
+}
 
 // Sprites
 @import "logo/*.png";
 @import "logo-retina/*.png";
-
-// Grid
-@import "grid";
 
 // Typography
 $base-font-size:	18px;
@@ -18,9 +19,15 @@ $heading-color:	#33668f;
 $body-color:	#999;
 @import "compass/typography/vertical_rhythm";
 
-h1 {
+// Grid (must come after typography because this uses $base-line-height)
+@import "grid";
+
+h1, h2, h3 {
 	font-family: $sans-serif;
 	font-weight: bold;
+}
+
+h1 {
 	color: $heading-color;
 }
 
@@ -33,4 +40,6 @@ h1 {
 }
 
 // Modules
+@import "about";
 @import "sites";
+@import "introduction";

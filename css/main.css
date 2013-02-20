@@ -63,6 +63,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
+/* line 6, ../sass/main.scss */
+body {
+  background: #fffff9;
+}
+
 /* line 50, logo/*.png */
 .logo-sprite {
   background: url('../images/logo-s7ab2d552d8.png') no-repeat;
@@ -73,151 +78,101 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   background: url('../images/logo-retina-scbf058b018.png') no-repeat;
 }
 
-/* line 6, ../sass/_grid.scss */
+/* line 14, ../sass/_grid.scss */
 .page {
   width: 870px;
   margin: 0 auto;
   overflow: hidden;
   *zoom: 1;
+  background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(5%, rgba(0, 0, 0, 0.5)), color-stop(5%, rgba(0, 0, 0, 0))), -webkit-gradient(linear, 0% 50%, 880 50%, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(0%, rgba(100, 100, 225, 0.25)), color-stop(11.36364%, rgba(100, 100, 225, 0.25)), color-stop(11.36364%, rgba(0, 0, 0, 0)), color-stop(12.5%, rgba(0, 0, 0, 0)), color-stop(12.5%, rgba(100, 100, 225, 0.25)), color-stop(23.86364%, rgba(100, 100, 225, 0.25)), color-stop(23.86364%, rgba(0, 0, 0, 0)), color-stop(25%, rgba(0, 0, 0, 0)), color-stop(25%, rgba(100, 100, 225, 0.25)), color-stop(36.36364%, rgba(100, 100, 225, 0.25)), color-stop(36.36364%, rgba(0, 0, 0, 0)), color-stop(37.5%, rgba(0, 0, 0, 0)), color-stop(37.5%, rgba(100, 100, 225, 0.25)), color-stop(48.86364%, rgba(100, 100, 225, 0.25)), color-stop(48.86364%, rgba(0, 0, 0, 0)), color-stop(50%, rgba(0, 0, 0, 0)), color-stop(50%, rgba(100, 100, 225, 0.25)), color-stop(61.36364%, rgba(100, 100, 225, 0.25)), color-stop(61.36364%, rgba(0, 0, 0, 0)), color-stop(62.5%, rgba(0, 0, 0, 0)), color-stop(62.5%, rgba(100, 100, 225, 0.25)), color-stop(73.86364%, rgba(100, 100, 225, 0.25)), color-stop(73.86364%, rgba(0, 0, 0, 0)), color-stop(75%, rgba(0, 0, 0, 0)), color-stop(75%, rgba(100, 100, 225, 0.25)), color-stop(86.36364%, rgba(100, 100, 225, 0.25)), color-stop(86.36364%, rgba(0, 0, 0, 0)), color-stop(87.5%, rgba(0, 0, 0, 0)), color-stop(87.5%, rgba(100, 100, 225, 0.25)), color-stop(98.86364%, rgba(100, 100, 225, 0.25)), color-stop(98.86364%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0)));
+  background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0) 5%), -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0px, rgba(100, 100, 225, 0.25) 0px, rgba(100, 100, 225, 0.25) 100px, rgba(0, 0, 0, 0) 100px, rgba(0, 0, 0, 0) 110px, rgba(100, 100, 225, 0.25) 110px, rgba(100, 100, 225, 0.25) 210px, rgba(0, 0, 0, 0) 210px, rgba(0, 0, 0, 0) 220px, rgba(100, 100, 225, 0.25) 220px, rgba(100, 100, 225, 0.25) 320px, rgba(0, 0, 0, 0) 320px, rgba(0, 0, 0, 0) 330px, rgba(100, 100, 225, 0.25) 330px, rgba(100, 100, 225, 0.25) 430px, rgba(0, 0, 0, 0) 430px, rgba(0, 0, 0, 0) 440px, rgba(100, 100, 225, 0.25) 440px, rgba(100, 100, 225, 0.25) 540px, rgba(0, 0, 0, 0) 540px, rgba(0, 0, 0, 0) 550px, rgba(100, 100, 225, 0.25) 550px, rgba(100, 100, 225, 0.25) 650px, rgba(0, 0, 0, 0) 650px, rgba(0, 0, 0, 0) 660px, rgba(100, 100, 225, 0.25) 660px, rgba(100, 100, 225, 0.25) 760px, rgba(0, 0, 0, 0) 760px, rgba(0, 0, 0, 0) 770px, rgba(100, 100, 225, 0.25) 770px, rgba(100, 100, 225, 0.25) 870px, rgba(0, 0, 0, 0) 870px, rgba(0, 0, 0, 0) 880px);
+  background-image: -moz-linear-gradient(bottom, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0) 5%), -moz-linear-gradient(left, rgba(0, 0, 0, 0) 0px, rgba(100, 100, 225, 0.25) 0px, rgba(100, 100, 225, 0.25) 100px, rgba(0, 0, 0, 0) 100px, rgba(0, 0, 0, 0) 110px, rgba(100, 100, 225, 0.25) 110px, rgba(100, 100, 225, 0.25) 210px, rgba(0, 0, 0, 0) 210px, rgba(0, 0, 0, 0) 220px, rgba(100, 100, 225, 0.25) 220px, rgba(100, 100, 225, 0.25) 320px, rgba(0, 0, 0, 0) 320px, rgba(0, 0, 0, 0) 330px, rgba(100, 100, 225, 0.25) 330px, rgba(100, 100, 225, 0.25) 430px, rgba(0, 0, 0, 0) 430px, rgba(0, 0, 0, 0) 440px, rgba(100, 100, 225, 0.25) 440px, rgba(100, 100, 225, 0.25) 540px, rgba(0, 0, 0, 0) 540px, rgba(0, 0, 0, 0) 550px, rgba(100, 100, 225, 0.25) 550px, rgba(100, 100, 225, 0.25) 650px, rgba(0, 0, 0, 0) 650px, rgba(0, 0, 0, 0) 660px, rgba(100, 100, 225, 0.25) 660px, rgba(100, 100, 225, 0.25) 760px, rgba(0, 0, 0, 0) 760px, rgba(0, 0, 0, 0) 770px, rgba(100, 100, 225, 0.25) 770px, rgba(100, 100, 225, 0.25) 870px, rgba(0, 0, 0, 0) 870px, rgba(0, 0, 0, 0) 880px);
+  background-image: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0) 5%), -o-linear-gradient(left, rgba(0, 0, 0, 0) 0px, rgba(100, 100, 225, 0.25) 0px, rgba(100, 100, 225, 0.25) 100px, rgba(0, 0, 0, 0) 100px, rgba(0, 0, 0, 0) 110px, rgba(100, 100, 225, 0.25) 110px, rgba(100, 100, 225, 0.25) 210px, rgba(0, 0, 0, 0) 210px, rgba(0, 0, 0, 0) 220px, rgba(100, 100, 225, 0.25) 220px, rgba(100, 100, 225, 0.25) 320px, rgba(0, 0, 0, 0) 320px, rgba(0, 0, 0, 0) 330px, rgba(100, 100, 225, 0.25) 330px, rgba(100, 100, 225, 0.25) 430px, rgba(0, 0, 0, 0) 430px, rgba(0, 0, 0, 0) 440px, rgba(100, 100, 225, 0.25) 440px, rgba(100, 100, 225, 0.25) 540px, rgba(0, 0, 0, 0) 540px, rgba(0, 0, 0, 0) 550px, rgba(100, 100, 225, 0.25) 550px, rgba(100, 100, 225, 0.25) 650px, rgba(0, 0, 0, 0) 650px, rgba(0, 0, 0, 0) 660px, rgba(100, 100, 225, 0.25) 660px, rgba(100, 100, 225, 0.25) 760px, rgba(0, 0, 0, 0) 760px, rgba(0, 0, 0, 0) 770px, rgba(100, 100, 225, 0.25) 770px, rgba(100, 100, 225, 0.25) 870px, rgba(0, 0, 0, 0) 870px, rgba(0, 0, 0, 0) 880px);
+  background-image: linear-gradient(bottom, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0) 5%), linear-gradient(left, rgba(0, 0, 0, 0) 0px, rgba(100, 100, 225, 0.25) 0px, rgba(100, 100, 225, 0.25) 100px, rgba(0, 0, 0, 0) 100px, rgba(0, 0, 0, 0) 110px, rgba(100, 100, 225, 0.25) 110px, rgba(100, 100, 225, 0.25) 210px, rgba(0, 0, 0, 0) 210px, rgba(0, 0, 0, 0) 220px, rgba(100, 100, 225, 0.25) 220px, rgba(100, 100, 225, 0.25) 320px, rgba(0, 0, 0, 0) 320px, rgba(0, 0, 0, 0) 330px, rgba(100, 100, 225, 0.25) 330px, rgba(100, 100, 225, 0.25) 430px, rgba(0, 0, 0, 0) 430px, rgba(0, 0, 0, 0) 440px, rgba(100, 100, 225, 0.25) 440px, rgba(100, 100, 225, 0.25) 540px, rgba(0, 0, 0, 0) 540px, rgba(0, 0, 0, 0) 550px, rgba(100, 100, 225, 0.25) 550px, rgba(100, 100, 225, 0.25) 650px, rgba(0, 0, 0, 0) 650px, rgba(0, 0, 0, 0) 660px, rgba(100, 100, 225, 0.25) 660px, rgba(100, 100, 225, 0.25) 760px, rgba(0, 0, 0, 0) 760px, rgba(0, 0, 0, 0) 770px, rgba(100, 100, 225, 0.25) 770px, rgba(100, 100, 225, 0.25) 870px, rgba(0, 0, 0, 0) 870px, rgba(0, 0, 0, 0) 880px);
+  -webkit-background-size: 100% 12px, auto;
+  -moz-background-size: 100% 12px, auto;
+  -o-background-size: 100% 12px, auto;
+  background-size: 100% 12px, auto;
+  background-position: left top;
 }
 
-/* line 11, ../sass/_grid.scss */
-.columns.one, .column.one {
+/* line 19, ../sass/_grid.scss */
+.main {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 650px;
+  margin-right: 0;
+  margin-top: 48px;
+}
+/* line 147, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html .main {
+  overflow-x: hidden;
+}
+
+/* line 25, ../sass/main.scss */
+h1, h2, h3 {
+  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+/* line 30, ../sass/main.scss */
+h1 {
+  color: #33668f;
+}
+
+/* line 34, ../sass/main.scss */
+.primary-heading {
+  font-size: 2em;
+  line-height: 1.33333em;
+}
+
+/* line 38, ../sass/main.scss */
+.primary-subheading {
+  color: #999999;
+}
+
+/* line 3, ../sass/_about.scss */
+.about {
   display: inline;
   float: left;
   margin-right: 10px;
   width: 210px;
 }
 /* line 147, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
-* html .columns.one, * html .column.one {
+* html .about {
   overflow-x: hidden;
-}
-/* line 14, ../sass/_grid.scss */
-.columns.one.half, .half.column.one {
-  display: inline;
-  float: left;
-  margin-right: 10px;
-  width: 100px;
-}
-/* line 147, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
-* html .columns.one.half, * html .half.column.one {
-  overflow-x: hidden;
-}
-/* line 19, ../sass/_grid.scss */
-.columns.two {
-  display: inline;
-  float: left;
-  margin-right: 10px;
-  width: 430px;
-}
-/* line 147, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
-* html .columns.two {
-  overflow-x: hidden;
-}
-/* line 22, ../sass/_grid.scss */
-.columns.two.half {
-  display: inline;
-  float: left;
-  margin-right: 10px;
-  width: 320px;
-}
-/* line 147, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
-* html .columns.two.half {
-  overflow-x: hidden;
-}
-/* line 27, ../sass/_grid.scss */
-.columns.three {
-  display: inline;
-  float: left;
-  margin-right: 10px;
-  width: 650px;
-}
-/* line 147, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
-* html .columns.three {
-  overflow-x: hidden;
-}
-/* line 30, ../sass/_grid.scss */
-.columns.three.half {
-  display: inline;
-  float: left;
-  margin-right: 10px;
-  width: 540px;
-}
-/* line 147, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
-* html .columns.three.half {
-  overflow-x: hidden;
-}
-/* line 35, ../sass/_grid.scss */
-.columns.four {
-  display: inline;
-  float: left;
-  margin-right: 10px;
-  width: 870px;
-}
-/* line 147, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
-* html .columns.four {
-  overflow-x: hidden;
-}
-/* line 38, ../sass/_grid.scss */
-.columns.four.half {
-  display: inline;
-  float: left;
-  margin-right: 10px;
-  width: 760px;
-}
-/* line 147, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
-* html .columns.four.half {
-  overflow-x: hidden;
-}
-/* line 43, ../sass/_grid.scss */
-.columns.last, .column.last {
-  margin-right: 0;
 }
 
-/* line 58, ../sass/_grid.scss */
-.push-one {
-  display: inline;
-  float: left;
-  position: relative;
-  margin: 0 -220px 1.5em 220px;
+@media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
+  /* line 11, ../sass/_about.scss */
+  .about-portrait {
+    background-image: url("../images/mig@2x.png");
+    background-size: 210px 336px;
+    background-repeat: no-repeat;
+    text-indent: -119988px;
+    overflow: hidden;
+    text-align: left;
+  }
 }
-
-/* line 21, ../sass/main.scss */
-h1 {
-  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
-  font-weight: bold;
-  color: #33668f;
-}
-
-/* line 27, ../sass/main.scss */
-.primary-heading {
-  font-size: 2em;
-  line-height: 1.33333em;
-}
-
-/* line 31, ../sass/main.scss */
-.primary-subheading {
-  color: #999999;
-}
-
-/* line 12, ../sass/_sites.scss */
+/* line 14, ../sass/_sites.scss */
 .sites a {
   display: block;
   position: relative;
   text-decoration: none;
 }
-/* line 18, ../sass/_sites.scss */
+/* line 20, ../sass/_sites.scss */
 .sites a:hover > .site-background {
-  margin-left: -75px;
-  top: -25px;
-  height: 150px;
-  width: 150px;
+  margin-left: -72px;
+  top: -24px;
+  height: 144px;
+  width: 144px;
 }
-/* line 25, ../sass/_sites.scss */
+/* line 27, ../sass/_sites.scss */
 .sites a:hover > .site-logo {
-  margin-bottom: 50px;
+  margin-bottom: 49px;
 }
-/* line 29, ../sass/_sites.scss */
+/* line 31, ../sass/_sites.scss */
 .sites a:hover > .site-background, .sites a:hover > .site-logo {
   -webkit-transition-duration: 0.2s;
   -moz-transition-duration: 0.2s;
@@ -229,7 +184,7 @@ h1 {
   transition-timing-function: ease-out;
 }
 
-/* line 37, ../sass/_sites.scss */
+/* line 39, ../sass/_sites.scss */
 .site {
   display: inline;
   float: left;
@@ -240,33 +195,33 @@ h1 {
 * html .site {
   overflow-x: hidden;
 }
-/* line 40, ../sass/_sites.scss */
+/* line 42, ../sass/_sites.scss */
 .site:last-child {
   margin-right: 0;
 }
 
-/* line 45, ../sass/_sites.scss */
+/* line 47, ../sass/_sites.scss */
 .site-background {
   background-position: center;
   background-attachment: fixed;
-  border-radius: 150px;
+  border-radius: 144px;
   -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
-  margin-left: -45px;
+  margin-left: -43px;
   position: absolute;
   top: 5px;
   left: 50%;
-  height: 90px;
-  width: 90px;
+  height: 86px;
+  width: 86px;
   z-index: 1;
 }
 
-/* line 59, ../sass/_sites.scss */
+/* line 61, ../sass/_sites.scss */
 .site-logo {
   background: #dddde0 no-repeat;
-  border-radius: 100px;
+  border-radius: 96px;
   -webkit-transition: none 0.3s ease-out;
   -moz-transition: none 0.3s ease-out;
   -o-transition: none 0.3s ease-out;
@@ -277,45 +232,52 @@ h1 {
   transition-property: background-color, margin-bottom;
   margin: 0 auto 25px;
   position: relative;
-  text-indent: -9999px;
-  height: 100px;
-  width: 100px;
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  height: 96px;
+  width: 96px;
   z-index: 10;
 }
 
-/* line 72, ../sass/_sites.scss */
+/* line 75, ../sass/_sites.scss */
 .site-caption {
   text-align: center;
   text-transform: lowercase;
   font-style: italic;
-  color: #999;
+  color: #999999;
 }
 
-/* line 84, ../sass/_sites.scss */
+/* line 87, ../sass/_sites.scss */
 .site-maf > .site-logo {
   background-image: url('../images/logo-s7ab2d552d8.png');
-  background-position: 10px 10px;
+  background-position: 8px 8px;
 }
 @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
-  /* line 84, ../sass/_sites.scss */
+  /* line 87, ../sass/_sites.scss */
   .site-maf > .site-logo {
     background-image: url('../images/logo-retina-scbf058b018.png');
     background-size: 80px 160px;
   }
 }
-/* line 88, ../sass/_sites.scss */
+/* line 91, ../sass/_sites.scss */
 .site-maf:hover > .site-logo {
   background-color: rgba(0, 0, 0, 0.75);
-  background-position: 10px -70px;
+  background-position: 8px -72px;
 }
-/* line 93, ../sass/_sites.scss */
+/* line 96, ../sass/_sites.scss */
 .site-maf > .site-background {
   background-image: url('../images/backgrounds/maf.jpg?1343344619');
 }
 @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
-  /* line 93, ../sass/_sites.scss */
+  /* line 96, ../sass/_sites.scss */
   .site-maf > .site-background {
     background-image: url('../images/backgrounds/maf@2x.jpg?1343344912');
     background-size: 525px 700px;
   }
+}
+
+/* line 1, ../sass/_introduction.scss */
+.introduction {
+  padding-bottom: 72px;
 }

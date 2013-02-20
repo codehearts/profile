@@ -8,38 +8,49 @@
 	<body>
 		<div class="page">
 			<header class="about">
-				<h1 class="name">Lorem Ipsum</h1>
+				<div class="about-portrait">
+					<img src="images/mig.png" alt="TODO" height="336" width="210" />
+				</div>
+				<h1 class="about-name">Lorem Ipsum</h1>
+				<h2 class="about-enrollment">URCS Undergrad Student</h2>
+				<!-- TODO These links -->
+				<ul>
+					<li><a href="/users/ugrads/">Back to URCS Undergrad directory</a></li>
+					<li><a href="http://www.cs.rochester.edu/urcs.html">Back to URCS Home Page</a></li>
+				</ul>
 			</header>
-			<section class="three columns">
-				<h1 class="primary-heading">Lorem Ipsum Dolor</h1>
-				<h2 class="primary-subheading">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</h2>
+			<section class="main">
+				<hgroup class="introduction">
+					<h1 class="primary-heading">Lorem Ipsum Dolor</h1>
+					<h2 class="primary-subheading">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</h2>
+				</hgroup>
+				<ul class="sites">
+					<li class="site">
+						<a href="http://iamnatehart.com" class="site-portfolio">
+							<!-- Yes yes, presentational markup is bad.
+							I have to do this because WebKit doesn't animate pseudo-elements (yet).
+							Where is your Chrome God now? -->
+							<div class="site-background"></div>
+							<h2 class="site-logo">I Am Nate Hart</h2>
+							<p class="site-caption">Lorem ipsum dolor sit amet</p>
+						</a>
+					</li>
+					<li class="site">
+						<a href="http://nejt.net" class="site-nejt">
+							<div class="site-background"></div>
+							<h2 class="site-logo">Nejt</h2>
+							<p class="site-caption">Lorem ipsum dolor sit amet</p>
+						</a>
+					</li>
+					<li class="site">
+						<a href="http://www.moodandfigure.com" class="site-maf">
+							<div class="site-background"></div>
+							<h2 class="site-logo">Mood &amp; Figure</h2>
+							<p class="site-caption">Lorem ipsum dolor sit amet</p>
+						</a>
+					</li>
+				</ul>
 			</section>
-			<ul class="sites three columns push-one">
-				<li class="site">
-					<a href="http://iamnatehart.com" class="site-portfolio">
-						<!-- Yes yes, presentational markup is bad.
-						I have to do this because WebKit doesn't animate pseudo-elements (yet).
-						Where is your Chrome God now? -->
-						<div class="site-background"></div>
-						<h2 class="site-logo">I Am Nate Hart</h2>
-						<p class="site-caption">Lorem ipsum dolor sit amet</p>
-					</a>
-				</li>
-				<li class="site">
-					<a href="http://nejt.net" class="site-nejt">
-						<div class="site-background"></div>
-						<h2 class="site-logo">Nejt</h2>
-						<p class="site-caption">Lorem ipsum dolor sit amet</p>
-					</a>
-				</li>
-				<li class="site">
-					<a href="http://www.moodandfigure.com" class="site-maf">
-						<div class="site-background"></div>
-						<h2 class="site-logo">Mood &amp; Figure</h2>
-						<p class="site-caption">Lorem ipsum dolor sit amet</p>
-					</a>
-				</li>
-			</ul>
 		</div>
 	</body>
 </html>

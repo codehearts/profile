@@ -1,60 +1,23 @@
+// Actual grid dimensions
 $blueprint-grid-columns:	8;
 $blueprint-grid-width:		100px;
 $blueprint-grid-margin:		10px;
 @import "blueprint/grid";
 
+// Grid background
+$grid-background-total-columns:		$blueprint-grid-columns;
+$grid-background-column-width:		$blueprint-grid-width;
+$grid-background-gutter-width:		$blueprint-grid-margin;
+$grid-background-baseline-height:	$base-line-height / 2;
+@import "compass/layout/grid-background";
+
 .page {
 	@include container;
+	@include grid-background;
 }
 
-.columns {
-	&.one {
-		@include column(2);
-
-		&.half {
-			@include column(1);
-		}
-	}
-
-	&.two {
-		@include column(4);
-
-		&.half {
-			@include column(3);
-		}
-	}
-
-	&.three {
-		@include column(6);
-
-		&.half {
-			@include column(5);
-		}
-	}
-
-	&.four {
-		@include column(8);
-
-		&.half {
-			@include column(7);
-		}
-	}
-
-	&.last {
-		@include last;
-	}
-}
-
-.column {
-	&.one {
-		@extend .one.columns;
-	}
-
-	&.last {
-		@extend .columns.last;
-	}
-}
-
-.push-one {
-	@include push(2);
+.main {
+	@include column(6);
+	@include last;
+	@include prepend-top($base-line-height * 2);
 }

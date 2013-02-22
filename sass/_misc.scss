@@ -1,0 +1,10 @@
+.back-link {
+	text-decoration: none;
+	font-family: $sans-serif;
+	@include adjust-font-size-to(16px);
+	color: $body-color;
+
+	&::before {
+		content: "\2190" // Left arrow
+	}
+}

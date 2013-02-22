@@ -1,7 +1,7 @@
 // Actual grid dimensions
 $blueprint-grid-columns:	8;
-$blueprint-grid-width:		100px;
-$blueprint-grid-margin:		10px;
+$blueprint-grid-width:		80px;
+$blueprint-grid-margin:		30px;
 @import "blueprint/grid";
 
 // Grid background
@@ -13,6 +13,7 @@ $grid-background-baseline-height:	$base-line-height / 2;
 
 .page {
 	@include container;
+	@include margin-leader(3);
 	@include grid-background;
 }
 

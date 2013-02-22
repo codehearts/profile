@@ -1,0 +1,41 @@
+$base-font-size:	18px;
+$base-line-height:	24px;
+$sans-serif:	"Helvetica Neue", Arial, Helvetica, sans-serif;
+$display-face:	Raleway, $sans-serif;
+$serif:			Georgia, serif;
+$heading-color:	#33668f;
+$body-color:	#999;
+@import "compass/typography/vertical_rhythm";
+
+h1, h2, h3 {
+	font-family: $display-face;
+	font-weight: 800;
+}
+
+h1 {
+	color: $heading-color;
+}
+
+.primary-heading {
+	@include adjust-font-size-to(48px);
+	@include adjust-leading-to(1);
+}
+
+.primary-subheading {
+	@include adjust-font-size-to(21px);
+	font-family: $sans-serif;
+	font-weight: normal;
+	color: $body-color;
+}
+
+.aside-heading {
+	@include adjust-font-size-to(24px);
+	@include adjust-leading-to(1);
+}
+
+.aside-subheading {
+	@include adjust-font-size-to(16px);
+	font-family: $sans-serif;
+	font-weight: normal;
+	color: $body-color;
+}

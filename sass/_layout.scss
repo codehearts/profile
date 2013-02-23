@@ -26,4 +26,36 @@ $grid-background-baseline-height:	$base-line-height / 2;
 .main-footer {
 	@include column(8);
 	@include margin-leader(2);
+	@include margin-trailer(1);
+}
+
+@media all and (max-width: $breakpoint-1) and (min-width: $breakpoint-2) {
+	$blueprint-grid-columns: 6;
+	$grid-background-total-columns: $blueprint-grid-columns;
+
+	.page {
+		@include margin-leader(2);
+		/*@include grid-background;*/
+		width: ($blueprint-grid-width + $blueprint-grid-margin) * $blueprint-grid-columns - $blueprint-grid-margin;
+	}
+
+	.main {
+		@include margin-leader(1);
+	}
+}
+
+@media all and (max-width: $breakpoint-2) {
+	$blueprint-grid-columns: 3;
+	$grid-background-total-columns: $blueprint-grid-columns;
+
+	.page {
+		@include margin-leader(2);
+		/*@include grid-background;*/
+		width: ($blueprint-grid-width + $blueprint-grid-margin) * $blueprint-grid-columns - $blueprint-grid-margin;
+	}
+
+	.main {
+		@include column(3);
+		@include margin-leader(1);
+	}
 }

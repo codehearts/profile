@@ -11,11 +11,7 @@
 }
 
 .aside-portrait {
-	@include margin-trailer(-0.5);
-}
-
-.aside-footer {
-	@include margin-leader(2);
+	@include margin-trailer(-1);
 }
 
 @media all and (-webkit-min-device-pixel-ratio: 1.5),
@@ -23,9 +19,24 @@ all and (-o-min-device-pixel-ratio: 3/2),
 all and (min--moz-device-pixel-ratio: 1.5),
 all and (min-device-pixel-ratio: 1.5) {
 	.aside-portrait {
+		$image: "../images/mig.png";
 		background-image: url("../images/mig@2x.png");
-		background-size: 210px 336px;
+		background-size: image-width($image) image-height($image);
 		background-repeat: no-repeat;
 		@include hide-text();
+	}
+}
+
+@media all and (max-width: $breakpoint-1) and (min-width: $breakpoint-2) {
+	.aside {
+		@include push(2);
+		@include last;
+	}
+}
+
+@media all and (max-width: $breakpoint-2) {
+	.aside {
+		@include push(0.5);
+		@include last;
 	}
 }

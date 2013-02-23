@@ -1,6 +1,10 @@
 @import "compass/reset";
 @import "compass/css3/transition";
 
+// Layout breakpoints
+$breakpoint-1: 870px;
+$breakpoint-2: 650px;
+
 // Custom mixins
 @import "retina";
 
@@ -20,12 +24,12 @@ $logo-retina-spacing:	40px;
 // Layout (must come after typography because this uses $base-line-height)
 @import "layout";
 
-body {
+html {
 	background: $background-color;
 }
 
 // Modules
 @import "aside";
 @import "sites";
-@import "misc";
+@import "links";
 @import "introduction";

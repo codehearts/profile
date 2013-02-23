@@ -147,14 +147,49 @@ h1 {
   margin-right: 30px;
   width: 850px;
   margin-top: 2.66667em;
+  margin-bottom: 1.33333em;
 }
 /* line 147, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html .main-footer {
   overflow-x: hidden;
 }
 
-/* line 23, ../sass/main.scss */
-body {
+@media all and (max-width: 870px) and (min-width: 650px) {
+  /* line 36, ../sass/_layout.scss */
+  .page {
+    margin-top: 2.66667em;
+    /*@include grid-background;*/
+    width: 630px;
+  }
+
+  /* line 42, ../sass/_layout.scss */
+  .main {
+    margin-top: 1.33333em;
+  }
+}
+@media all and (max-width: 650px) {
+  /* line 51, ../sass/_layout.scss */
+  .page {
+    margin-top: 2.66667em;
+    /*@include grid-background;*/
+    width: 300px;
+  }
+
+  /* line 57, ../sass/_layout.scss */
+  .main {
+    display: inline;
+    float: left;
+    margin-right: 30px;
+    width: 300px;
+    margin-top: 1.33333em;
+  }
+  /* line 147, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+  * html .main {
+    overflow-x: hidden;
+  }
+}
+/* line 27, ../sass/main.scss */
+html {
   background: #fffefb;
 }
 
@@ -179,23 +214,38 @@ body {
 
 /* line 13, ../sass/_aside.scss */
 .aside-portrait {
-  margin-bottom: -0.66667em;
-}
-
-/* line 17, ../sass/_aside.scss */
-.aside-footer {
-  margin-top: 2.66667em;
+  margin-bottom: -1.33333em;
 }
 
 @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
-  /* line 25, ../sass/_aside.scss */
+  /* line 21, ../sass/_aside.scss */
   .aside-portrait {
     background-image: url("../images/mig@2x.png");
-    background-size: 210px 336px;
+    background-size: 190px 336px;
     background-repeat: no-repeat;
     text-indent: -119988px;
     overflow: hidden;
     text-align: left;
+  }
+}
+@media all and (max-width: 870px) and (min-width: 650px) {
+  /* line 31, ../sass/_aside.scss */
+  .aside {
+    display: inline;
+    float: left;
+    position: relative;
+    margin: 0 -220px 1.5em 220px;
+    margin-right: 0;
+  }
+}
+@media all and (max-width: 650px) {
+  /* line 38, ../sass/_aside.scss */
+  .aside {
+    display: inline;
+    float: left;
+    position: relative;
+    margin: 0 -55px 1.5em 55px;
+    margin-right: 0;
   }
 }
 /* line 16, ../sass/_sites.scss */
@@ -382,7 +432,6 @@ body {
 .site-portfolio > .site-background {
   background-image: url('../images/backgrounds/portfolio.png?1361584772');
   background-color: #dddde0;
-  background-position: 92px center;
 }
 @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
   /* line 137, ../sass/_sites.scss */
@@ -392,7 +441,7 @@ body {
   }
 }
 
-/* line 3, ../sass/_misc.scss */
+/* line 5, ../sass/_links.scss */
 a {
   text-decoration: none;
   font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
@@ -400,7 +449,7 @@ a {
   line-height: 1.5em;
 }
 
-/* line 9, ../sass/_misc.scss */
+/* line 11, ../sass/_links.scss */
 a[class^=special-link] {
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
@@ -413,12 +462,12 @@ a[class^=special-link] {
   display: inline-block;
   color: #545459;
 }
-/* line 15, ../sass/_misc.scss */
+/* line 17, ../sass/_links.scss */
 a[class^=special-link]:hover {
   margin-left: 1.5em;
   color: #161617;
 }
-/* line 19, ../sass/_misc.scss */
+/* line 21, ../sass/_links.scss */
 a[class^=special-link]:hover::before {
   margin-left: -1em;
   display: inline-block;
@@ -426,7 +475,7 @@ a[class^=special-link]:hover::before {
   line-height: 16.8px;
   position: absolute;
 }
-/* line 28, ../sass/_misc.scss */
+/* line 30, ../sass/_links.scss */
 a[class^=special-link]:active {
   -webkit-transform: translateY(1px);
   -moz-transform: translateY(1px);
@@ -435,21 +484,21 @@ a[class^=special-link]:active {
   transform: translateY(1px);
 }
 
-/* line 34, ../sass/_misc.scss */
+/* line 36, ../sass/_links.scss */
 .special-link-email:hover::before {
   content: "\270D";
 }
 
-/* line 40, ../sass/_misc.scss */
+/* line 42, ../sass/_links.scss */
 .special-link-back:hover::before {
   content: "\2190";
 }
 
-/* line 45, ../sass/_misc.scss */
+/* line 47, ../sass/_links.scss */
 a.subtle-link {
   color: #939399;
 }
-/* line 48, ../sass/_misc.scss */
+/* line 50, ../sass/_links.scss */
 a.subtle-link:hover {
   color: #545459;
 }
@@ -457,4 +506,11 @@ a.subtle-link:hover {
 /* line 3, ../sass/_introduction.scss */
 .introduction {
   margin-bottom: 4em;
+}
+
+@media all and (max-width: 870px) and (min-width: 650px) {
+  /* line 8, ../sass/_introduction.scss */
+  .introduction {
+    margin-bottom: 2.66667em;
+  }
 }

@@ -137,6 +137,5 @@ $site-button-ease-off:		ease-out;
 	& > .site-background {
 		@include image2x('backgrounds/portfolio.png', 'backgrounds/portfolio@2x.png');
 		background-color: $button-color;
-		background-position: 92px center;
 	}
 }

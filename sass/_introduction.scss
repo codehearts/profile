@@ -3,3 +3,9 @@
 .introduction {
 	@include margin-trailer(3);
 }
+
+@media all and (max-width: $breakpoint-1) and (min-width: $breakpoint-2) {
+	.introduction {
+		@include margin-trailer(2);
+	}
+}

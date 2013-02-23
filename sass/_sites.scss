@@ -1,6 +1,8 @@
 @import "compass/typography/text/replacement";
 
 // Site button parameters
+$sprite-height:	80px;
+$sprite-width:	80px;
 $site-button-size:				96px;
 $site-button-background-size:	144px;
 $site-button-size-difference:	$site-button-background-size - $site-button-size;
@@ -12,11 +14,14 @@ $site-button-ease-off:		ease-out;
 
 .sites {
 	a {
+		@include transition(margin-top 0.15s ease-in-out);
 		display: block;
 		position: relative;
 		text-decoration: none;
 
 		&:hover {
+			@include margin-leader(-0.5);
+
 			& > .site-background {
 				margin-left: -($site-button-background-size / 2);
 				top: -($site-button-size-difference / 2);
@@ -59,8 +64,7 @@ $site-button-ease-off:		ease-out;
 }
 
 .site-logo {
-	// TODO Color variable for this
-	background: #dddde0 no-repeat;
+	background: $button-color no-repeat;
 	border-radius: $site-button-size;
 	@include transition(none $site-button-timing-off $site-button-ease-off);
 	@include transition-property(background-color, margin-bottom);
@@ -81,9 +85,8 @@ $site-button-ease-off:		ease-out;
 }
 
 .site-maf {
-	$sprite-file: sprite-file($logo-sprites, maf);
-	$offset-x: ($site-button-size - image-width($sprite-file)) / 2;
-	$offset-y: ($site-button-size - image-height($sprite-file)) / 2;
+	$offset-x: ($site-button-size - $sprite-width) / 2;
+	$offset-y: ($site-button-size - $sprite-height) / 2;
 
 	& > .site-logo {
 		@include sprite2x($logo-sprites, $logo-retina-sprites, maf, $offset-x, $offset-y);
@@ -96,5 +99,44 @@ $site-button-ease-off:		ease-out;
 
 	& > .site-background {
 		@include image2x('backgrounds/maf.jpg', 'backgrounds/maf@2x.jpg');
+	}
+}
+
+.site-nejt {
+	$offset-x: ($site-button-size - $sprite-width) / 2;
+	$offset-y: ($site-button-size - $sprite-height) / 2;
+
+	& > .site-logo {
+		@include sprite2x($logo-sprites, $logo-retina-sprites, nejt, $offset-x, $offset-y);
+	}
+
+	&:hover > .site-logo {
+		background-color: rgba(0,0,0,0.1);
+		background-position: sprite-position($logo-sprites, nejt-color, $offset-x, $offset-y);
+	}
+
+	& > .site-background {
+		background-color: #f7ede6;
+		@include image2x('backgrounds/nejt.png', 'backgrounds/nejt@2x.png');
+	}
+}
+
+.site-portfolio {
+	$offset-x: ($site-button-size - $sprite-width) / 2;
+	$offset-y: ($site-button-size - $sprite-height) / 2;
+
+	& > .site-logo {
+		@include sprite2x($logo-sprites, $logo-retina-sprites, portfolio, $offset-x, $offset-y);
+	}
+
+	&:hover > .site-logo {
+		background-color: #6aabff;
+		background-position: sprite-position($logo-sprites, portfolio-color, $offset-x, $offset-y);
+	}
+
+	& > .site-background {
+		@include image2x('backgrounds/portfolio.png', 'backgrounds/portfolio@2x.png');
+		background-color: $button-color;
+		background-position: 92px center;
 	}
 }

@@ -1,10 +1,51 @@
-.back-link {
+@import "compass/css3/transform";
+
+a {
 	text-decoration: none;
 	font-family: $sans-serif;
 	@include adjust-font-size-to(16px);
+}
+
+a[class^=special-link] {
+	@include transition(all 0.2s);
+	@include transition-property(margin-left, color);
+	display: inline-block;
+	color: $link-color;
+
+	&:hover {
+		margin-left: 1.5em;
+		color: $link-hover-color;
+
+		&::before {
+			margin-left: -1em;
+			display: inline-block;
+			font-size: 21px;
+			line-height: $base-line-height * 0.7;
+			position: absolute;
+		}
+	}
+
+	&:active {
+		@include translateY(1px);
+	}
+}
+
+.special-link-email {
+	&:hover::before {
+		content: "\270D"; // Writing hand
+	}
+}
+
+.special-link-back {
+	&:hover::before {
+		content: "\2190"; // Leftward arrow
+	}
+}
+
+a.subtle-link {
 	color: $body-color;
 
-	&::before {
-		content: "\2190" // Left arrow
+	&:hover {
+		color: $link-color;
 	}
 }

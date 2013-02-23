@@ -4,8 +4,18 @@
 	@include column(2);
 }
 
+.aside-header {
+	@include margin-trailer(0.25);
+	@include padding-trailer(0.25);
+	border-bottom: 1px solid $light-body-color;
+}
+
 .aside-portrait {
 	@include margin-trailer(-0.5);
+}
+
+.aside-footer {
+	@include margin-leader(2);
 }
 
 @media all and (-webkit-min-device-pixel-ratio: 1.5),

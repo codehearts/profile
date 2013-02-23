@@ -1,3 +1,5 @@
+@import "compass/typography/text/replacement";
+
 .introduction {
-	padding-bottom: $base-line-height * 3;
+	@include margin-trailer(3);
 }

@@ -14,11 +14,16 @@ $grid-background-baseline-height:	$base-line-height / 2;
 .page {
 	@include container;
 	@include margin-leader(3);
-	@include grid-background;
+	/*@include grid-background;*/
 }
 
 .main {
 	@include column(6);
 	@include last;
-	@include prepend-top($base-line-height * 2);
+	@include margin-leader(2);
+}
+
+.main-footer {
+	@include column(8);
+	@include margin-leader(2);
 }

@@ -18,7 +18,7 @@
 
 @mixin sprite2x($sprites, $sprites2x, $name, $offset-x: 0, $offset-y: 0) {
 	background-image: sprite-url($sprites);
-	background-position: sprite-position($sprites2x, $name, $offset-x, $offset-y);
+	background-position: sprite-position($sprites, $name, $offset-x, $offset-y);
 
 	@media all and (-webkit-min-device-pixel-ratio: 1.5),
 	all and (-o-min-device-pixel-ratio: 3/2),
@@ -26,5 +26,16 @@
 	all and (min-device-pixel-ratio: 1.5) {
 		background-image: sprite-url($sprites2x);
 		background-size: image-width(sprite-path($sprites)) image-height(sprite-path($sprites));
+
+		$x-pos: round(nth(sprite-position($sprites2x, $name), 1) / 2);
+        $y-pos: round(nth(sprite-position($sprites2x, $name), 2) / 2);
+        @if (nth(sprite-position($sprites, $name), 1) == $x-pos and nth(sprite-position($sprites, $name), 2) == $y-pos) {
+            // Nothing to do here
+        }
+        @else {
+			$x-pos: $x-pos + $offset-x;
+			$y-pos: $y-pos + $offset-y;
+            background-position: $x-pos $y-pos;
+        }
 	}
 }

@@ -5,18 +5,24 @@
 @import "retina";
 
 // Sprites
+$logo-layout:	vertical;
+$logo-spacing:	20px;
+$logo-retina-layout:	vertical;
+$logo-retina-spacing:	40px;
 @import "logo/*.png";
 @import "logo-retina/*.png";
 
-body {
-	background: #fffcf9;
-}
+@import "color";
 
 // Typography
 @import "typography";
 
-// Grid (must come after typography because this uses $base-line-height)
-@import "grid";
+// Layout (must come after typography because this uses $base-line-height)
+@import "layout";
+
+body {
+	background: $background-color;
+}
 
 // Modules
 @import "aside";

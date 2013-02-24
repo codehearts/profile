@@ -14,7 +14,7 @@ $grid-background-baseline-height:	$base-line-height / 2;
 .page {
 	@include container;
 	@include margin-leader(3);
-	/*@include grid-background;*/
+	//@include grid-background;
 }
 
 .main {
@@ -35,7 +35,7 @@ $grid-background-baseline-height:	$base-line-height / 2;
 
 	.page {
 		@include margin-leader(2);
-		/*@include grid-background;*/
+		//@include grid-background;
 		width: ($blueprint-grid-width + $blueprint-grid-margin) * $blueprint-grid-columns - $blueprint-grid-margin;
 	}
 
@@ -50,7 +50,7 @@ $grid-background-baseline-height:	$base-line-height / 2;
 
 	.page {
 		@include margin-leader(2);
-		/*@include grid-background;*/
+		//@include grid-background;
 		width: ($blueprint-grid-width + $blueprint-grid-margin) * $blueprint-grid-columns - $blueprint-grid-margin;
 	}
 

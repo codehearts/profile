@@ -6,7 +6,7 @@ $sprite-width:	80px;
 $site-button-size:				96px;
 $site-button-background-size:	144px;
 $site-button-size-difference:	$site-button-background-size - $site-button-size;
-$site-button-caption-leading:	25px;
+$site-button-caption-leading:	$base-line-height;
 $site-button-timing-on:		0.2s;
 $site-button-timing-off:	0.3s;
 $site-button-ease-on:		ease-out;
@@ -43,9 +43,11 @@ $site-button-ease-off:		ease-out;
 
 .site {
 	@include column(2);
+	@include margin-trailer(2);
 
 	&:last-child {
 		@include last;
+		@include margin-trailer(0);
 	}
 }
 
@@ -137,5 +139,17 @@ $site-button-ease-off:		ease-out;
 	& > .site-background {
 		@include image2x('backgrounds/portfolio.png', 'backgrounds/portfolio@2x.png');
 		background-color: $button-color;
+		background-attachment: scroll;
+		background-position: -78px -20px;
+	}
+
+	&:hover > .site-background {
+		background-position: -48px 0;
+	}
+}
+
+@media all and (max-width: $breakpoint-2) {
+	.site {
+		@include column(3);
 	}
 }

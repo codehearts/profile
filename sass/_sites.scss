@@ -104,22 +104,22 @@ $site-button-ease-off:		ease-out;
 	}
 }
 
-.site-nejt {
+.site-kejt {
 	$offset-x: ($site-button-size - $sprite-width) / 2;
 	$offset-y: ($site-button-size - $sprite-height) / 2;
 
 	& > .site-logo {
-		@include sprite2x($logo-sprites, $logo-retina-sprites, nejt, $offset-x, $offset-y);
+		@include sprite2x($logo-sprites, $logo-retina-sprites, kejt, $offset-x, $offset-y);
 	}
 
 	&:hover > .site-logo {
 		background-color: rgba(0,0,0,0.1);
-		background-position: sprite-position($logo-sprites, nejt-color, $offset-x, $offset-y);
+		background-position: sprite-position($logo-sprites, kejt-color, $offset-x, $offset-y);
 	}
 
 	& > .site-background {
 		background-color: #f7ede6;
-		@include image2x('backgrounds/nejt.png', 'backgrounds/nejt@2x.png');
+		@include image2x('backgrounds/kejt.png', 'backgrounds/kejt@2x.png');
 	}
 }
 
@@ -132,7 +132,7 @@ $site-button-ease-off:		ease-out;
 	}
 
 	&:hover > .site-logo {
-		background-color: #6aabff;
+		background-color: #fff;
 		background-position: sprite-position($logo-sprites, portfolio-color, $offset-x, $offset-y);
 	}
 
